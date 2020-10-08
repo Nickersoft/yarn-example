@@ -1,0 +1,13 @@
+{
+  "name": "@custom/microservice",
+  "scripts": {
+    "build": "cross-env TS_NODE_PROJECT=\"../../tsconfig.webpack.json\" webpack",
+    "start": "node ./dist/bundle.js"
+  },
+  "dependencies": {
+    "@custom/utils": "workspace:src/utils"
+  },
+  "devDependencies": {
+    "ts-loader": "^8.0.4"
+  }
+}
